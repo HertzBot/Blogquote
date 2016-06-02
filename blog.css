@@ -1,0 +1,342 @@
+/*CSS*/
+
+/*Styles by element*/
+
+body {
+  position: relative;
+  font: 400 1em "Roboto Slab", serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.2em;
+  letter-spacing: 0.1em;
+  margin: 10vh 0 2vh;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  margin: 0 0 6vh;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  width: 30vw;
+  margin-bottom: 2vh;
+}
+
+h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  float: right;
+  font-size: 1.3em;
+  font-weight: 700;
+  width: 30vw;
+  margin-bottom: 2vh;
+}
+
+h4 a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  border: 1px solid black;
+  width: 90vw;
+  margin-bottom: 4vh;
+}
+
+nav {
+  position: absolute;
+  right: 0px;
+  top: 22vh;
+  width: 250px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4em;
+  line-height: 50px;
+  color: black;
+  margin: 40px auto;
+  padding-left: 20px;
+  width: 150px;
+  height: 50px;
+}
+
+main {
+  width: 70vw;
+  margin-left: 8vw;
+}
+
+div {
+  overflow: auto;
+  margin-bottom: 6vh;
+}
+
+div > a {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+p {
+  font-size: 1.2em;
+  width: 30vw;
+}
+
+img {
+  float: left;
+  width: 30vw;
+  transform: translateY(-6vh);
+}
+
+span {
+  display: inline-block;
+  width: 30vw;
+  font-size: 0.6em;
+}
+
+footer {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  width: 70vw;
+  margin-left: 8vw;
+  margin-bottom: 8vh;
+  margin-top: 2vh;
+}
+
+/*Styles by class*/
+
+.left {
+  float: left;
+  margin-right: 6vw;
+}
+
+.right {
+  float: right;
+  clear: right;
+  margin-left: 6vw;
+}
+
+.newold {
+  text-align: center;
+}
+
+/*Styles by ID*/
+
+#singlepost h3 {
+  font-size: 2em;
+  width: 70vw;
+  text-align: center;
+  margin: 4vh 0 6vh;
+}
+
+#singlepost h4 {
+  font-size: 2em;
+  width: 70vw;
+  text-align: center;
+  margin: 4vh 0 6vh;
+}
+
+#singlepost p {
+  float: none;
+  font-size: 1.4em;
+  width: 70vw;
+}
+
+#singlepost img {
+  display: block;
+  float: none;
+  width: 50vw;
+  margin: auto;
+  transform: none;
+  margin-top: 6vh;
+}
+
+#singlepost span {
+  width: 70vw;
+}
+
+/*Pseudo classes*/
+
+a:hover {
+  color: orange;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/*CSS media queries*/
+
+@media screen and (max-width: 1100px) {
+  p {
+    font-size: 1.1em;
+  }
+  img {
+    width: 35vw;
+  }
+  main {
+    width: 75vw;
+  }
+  .left {
+    margin-right: 2vw;
+  }
+  .right {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 1em;
+  }
+  nav {
+    width: 200px;
+  }
+  nav a {
+    font-size: 1.2em;
+    line-height: 40px;
+    margin: 30px auto;
+    padding-left: 20px;
+    width: 125px;
+    height: 40px;
+  }
+  img {
+    width: 38vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 60vw;
+  }
+  h3 {
+    font-size: 1.5em;
+    width: 60vw;
+    text-align: center;
+    margin: 2vh 0 4vh;
+  }
+  h4 {
+    font-size: 1.5em;
+    width: 60vw;
+    text-align: center;
+    margin: 2vh 0 4vh;
+  }
+  p {
+    float: none;
+    font-size: 1em;
+    width: 60vw;
+    margin-bottom: 4vh;
+  }
+  img {
+    display: block;
+    float: none;
+    width: 50vw;
+    margin: auto;
+    transform: none;
+  }
+  span {
+    width: 60vw;
+  }
+  #singlepost h3 {
+    font-size: 1.5em;
+    width: 50vw;
+  }
+
+  #singlepost h4 {
+    font-size: 1.5em;
+    width: 50vw;
+  }
+  #singlepost p {
+    font-size: 1.2em;
+    width: 50vw;
+  }
+  #singlepost span {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 40vw;
+  }
+  h3 {
+    font-size: 1em;
+    width: 40vw;
+    margin: 2vh 0 4vh;
+  }
+  h4 {
+    font-size: 1em;
+    width: 40vw;
+    margin: 2vh 0 4vh;
+  }
+  p {
+    font-size: 0.8em;
+    width: 40vw;
+    margin-bottom: 4vh;
+  }
+  img {
+    width: 40vw;
+  }
+  span {
+    width: 40vw;
+  }
+  #singlepost h3 {
+    font-size: 1.2em;
+    width: 40vw;
+    margin: 2vh 0 4vh;
+  }
+  #singlepost h4 {
+    font-size: 1.2em;
+    width: 40vw;
+    margin: 2vh 0 4vh;
+  }
+  #singlepost p {
+    font-size: 1em;
+    width: 40vw;
+  }
+  #singlepost span {
+    width: 40vw;
+  }
+  #singlepost img {
+    width: 40vw;
+    margin-top: 4vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    right: 0px;
+    top: 30vh;
+    width: 150px;
+  }
+  nav a {
+    font-size: 1em;
+    line-height: 30px;
+    margin: 20px auto;
+    padding-left: 20px;
+    width: 100px;
+    height: 30px;
+  }
+  div > a {
+    font-size: 0.8em;
+  }
+  footer {
+    font-size: 0.6em;
+  }
+  #singlepost p {
+    font-size: 0.8em;
+  }
+}
